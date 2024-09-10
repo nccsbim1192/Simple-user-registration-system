@@ -1,0 +1,181 @@
+/* General body styling */
+body {
+  font-size: 16px;
+  font-family: 'Arial', sans-serif;
+  background: #F4F7F9;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styling for the home page */
+#home-page .home-header {
+  width: 100%;
+  padding: 20px;
+  color: white;
+  background: #3E8E7E;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* Full-width content box styling for home page */
+#home-page .home-content {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #fff;
+  border: 1px solid #DDE2E6;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+#home-page .home-content:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile information section */
+#home-page .profile-info {
+  margin-top: 20px;
+  padding: 15px;
+  background: #F1F4F7;
+  border: 1px solid #DDE2E6;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#home-page .profile-info h4 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+}
+
+#home-page .profile-info p {
+  font-size: 18px;
+  color: #555;
+}
+
+/* Useful links section */
+#home-page .user-resources {
+  margin-top: 30px;
+}
+
+#home-page .user-resources h4 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #3E8E7E;
+}
+
+#home-page .user-resources ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#home-page .user-resources ul li {
+  margin-bottom: 10px;
+}
+
+#home-page .user-resources ul li a {
+  text-decoration: none;
+  color: #3E8E7E;
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s ease-in-out;
+}
+
+#home-page .user-resources ul li a:hover {
+  color: #2B6955;
+  text-decoration: underline;
+}
+
+/* Additional section for new components */
+#home-page .additional-section {
+  margin-top: 40px;
+  padding: 20px;
+  background: #EFEFEF;
+  border: 1px solid #DDE2E6;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#home-page .additional-section h4 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #3E8E7E;
+}
+
+#home-page .feature-box {
+  padding: 15px;
+  margin-top: 15px;
+  background: #F9F9F9;
+  border: 1px solid #DDE2E6;
+  border-radius: 5px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.3s ease;
+}
+
+#home-page .feature-box:hover {
+  background: #f1f1f1;
+}
+
+/* Button and link styling */
+a {
+  text-decoration: none;
+  color: #3E8E7E;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #2B6955;
+  text-decoration: underline;
+}
+
+/* Success and error messages */
+.success {
+  color: #2B6955; 
+  background: #DFF5E1; 
+  border: 1px solid #2B6955;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  #home-page .home-content {
+    width: 95%;
+    padding: 20px;
+  }
+
+  #home-page .home-header {
+    font-size: 24px;
+    padding: 15px;
+  }
+
+  #home-page .profile-info, #home-page .additional-section {
+    flex-direction: column;
+  }
+
+  #home-page .profile-info h4, #home-page .additional-section h4 {
+    font-size: 20px;
+  }
+
+  #home-page .user-resources h4 {
+    font-size: 18px;
+  }
+
+  #home-page .feature-box {
+    font-size: 14px;
+  }
+}
